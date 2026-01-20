@@ -29,8 +29,7 @@ with col2:
 search = st.text_input("🔍 ابحث عن دواء بالاسم...")
 
 # إعداد الذكاء الاصطناعي (ضع مفتاحك هنا)
-API_KEY = 
-"AIzaSyDb1X2IhoTJbPIT1qMne3Y-rW7J0MI0pOY"
+API_KEY = "AIzaSyDb1X2IhoTJbPIT1qMne3Y-rW7J0MI0pOY"
 genai.configure(api_key=API_KEY)
 
 # خيارات التصوير والرفع
