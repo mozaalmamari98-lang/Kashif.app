@@ -46,7 +46,7 @@ if img_file is not None:
     st.image(image, caption="الصورة التي تم اختيارها", use_container_width=True)
     
     if st.button('ابدأ المسح الذكي'):
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-pro-vision')
         prompt = "أنت صيدلي خبير. تعرف على هذا الدواء من الصورة واذكر: 1- الاسم العلمي والتجاري 2- دواعي الاستعمال 3- الجرعة المعتادة 4- تحذيرات هامة. اجعل الإجابة منظمة جداً وباللغة العربية."
         
         with st.spinner('جاري المسح والتحليل...'):
